@@ -24,7 +24,7 @@ const Login: FC = () => {
     try {
       setLoading(true);
       await signInWithEmailAndPassword(auth, emailAddress, password);
-      const user: User | null = await fetchUserByEmail(emailAddress);
+      const user: User = await fetchUserByEmail(emailAddress);
       if (user !== null) {
         login(user);
       } else {
@@ -100,7 +100,7 @@ const Login: FC = () => {
           <p className="text-sm">
             Don't have an account?{` `}
             <Link to={ROUTES.SIGN_UP} className="font-bold text-blue-primary">
-            Sign up
+              Sign up
             </Link>
           </p>
         </div>

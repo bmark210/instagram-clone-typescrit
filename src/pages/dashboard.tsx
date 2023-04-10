@@ -1,4 +1,4 @@
-import { FC, useEffect } from 'react';
+import { useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import * as ROUTES from '../constans/routes';
 import useUserStore from '../store/userStore';
@@ -6,7 +6,7 @@ import { User } from '../types/user';
 import Timeline from '../components/timeline';
 import SideBar from '../components/sideBar';
 
-const Dashboard: FC = () => {
+const Dashboard = () => {
   const user: User | null = useUserStore((state) => state.user);
   useEffect(() => {
     document.title = 'Intsagram';

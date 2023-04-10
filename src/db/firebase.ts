@@ -13,19 +13,17 @@ import { firestore } from '../utils/firebase';
 import { User } from '../types/user';
 import { Post } from '../types/post';
 
-export async function fetchUserByEmail(
-  emailAddress: string
-): Promise<User | null> {
+export async function fetchUserByEmail(emailAddress: string): Promise<User> {
   const collectionRef = collection(firestore, 'users');
   const q = query(collectionRef, where('email', '==', emailAddress));
   const querySnapshot = await getDocs(q);
-  if (querySnapshot.empty) {
-    console.log('No matching documents.');
-    return null;
-  } else {
-    const user = querySnapshot.docs[0].data();
-    return user as User;
-  }
+  // if (querySnapshot.empty) {
+  //   console.log('No matching documents.');
+  //   return null;
+  // } else {
+  const user = querySnapshot.docs[0].data();
+  return user as User;
+  // }
 }
 
 export async function getPostsByFollowing(
