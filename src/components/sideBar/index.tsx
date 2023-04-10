@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import UserForm from './user';
 import Suggestions from './suggestions';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 
 interface SideBarProps {
   user: User;

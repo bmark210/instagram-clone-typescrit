@@ -1,9 +1,9 @@
 import { FC, useEffect, useState, useRef } from 'react';
 import Header from './header';
 import Image from './image';
-import { fetchUserById } from '../../utils/firebase';
-import { Post } from '../../models/post';
-import { User } from '../../models/user';
+import { fetchUserById } from '../../db/firebase';
+import { Post } from '../../types/post';
+import { User } from '../../types/user';
 import ContentLoader from 'react-content-loader';
 import Comments from './comments';
 import Actions from './actions';

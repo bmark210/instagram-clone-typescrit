@@ -2,7 +2,7 @@ import { FC, useEffect } from 'react';
 import { Navigate } from 'react-router-dom';
 import * as ROUTES from '../constans/routes';
 import useUserStore from '../store/userStore';
-import { User } from '../models/user';
+import { User } from '../types/user';
 import Timeline from '../components/timeline';
 import SideBar from '../components/sideBar';
 

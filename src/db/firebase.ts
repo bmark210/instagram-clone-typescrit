@@ -9,9 +9,9 @@ import {
   updateDoc,
   where,
 } from 'firebase/firestore';
-import { firestore } from '../db/firebase';
-import { User } from '../models/user';
-import { Post } from '../models/post';
+import { firestore } from '../utils/firebase';
+import { User } from '../types/user';
+import { Post } from '../types/post';
 
 export async function fetchUserByEmail(
   emailAddress: string

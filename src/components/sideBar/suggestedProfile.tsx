@@ -1,6 +1,6 @@
 import { FC, SyntheticEvent, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { toggleFollow } from '../../utils/firebase';
+import { toggleFollow } from '../../db/firebase';
 import useUserStore from '../../store/userStore';
 
 interface SuggestedProfileProps {

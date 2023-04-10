@@ -1,7 +1,9 @@
 import { FC, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import useUserStore from '../store/userStore';
 
-const NotFound: FC<{ userId: string | null }> = ({ userId }) => {
+const NotFound: FC = () => {
+  const userId = useUserStore((state) => state.user?.userId);
   useEffect(() => {
     document.title = 'Not Found - Instagram';
   });

@@ -1,11 +1,11 @@
 import { FC, useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import * as ROUTES from '../constans/routes';
-import { fetchUserByUsername, getPostsOfUser } from '../utils/firebase';
+import { fetchUserByUsername, getPostsOfUser } from '../db/firebase';
 import { useParams } from 'react-router-dom';
 import UserProfile from '../components/profile';
-import { User } from '../models/user';
-import { Post } from '../models/post';
+import { User } from '../types/user';
+import { Post } from '../types/post';
 
 const Profile: FC = () => {
   const { username } = useParams<{ username: string | undefined }>();

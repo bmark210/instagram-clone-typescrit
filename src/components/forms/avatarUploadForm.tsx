@@ -1,7 +1,7 @@
 import { ChangeEvent, FC, useState } from 'react';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { doc, setDoc } from 'firebase/firestore';
-import { firestore } from '../../db/firebase';
+import { firestore } from '../../utils/firebase';
 import useUserStore from '../../store/userStore';
 import { useRef } from 'react';
 

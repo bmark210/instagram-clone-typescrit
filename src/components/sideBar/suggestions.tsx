@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react';
-import { getSuggestedProfiles } from '../../utils/firebase';
+import { getSuggestedProfiles } from '../../db/firebase';
 import SuggestedProfile from './suggestedProfile';
 import ContentLoader from 'react-content-loader';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 import Modal from '../forms/modal';
 import AllSuggestions from './allSuggestions';
 

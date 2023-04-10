@@ -1,12 +1,12 @@
 import { FC, SyntheticEvent, useCallback, useEffect, useState } from 'react';
 import ContentLoader from 'react-content-loader';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 import useUserStore from '../../store/userStore';
 import {
   isUserFollowingProfile,
   toggleFollow,
   toggleUnfollow,
-} from '../../utils/firebase';
+} from '../../db/firebase';
 
 interface HeaderProps {
   photosCount: number;

@@ -1,8 +1,8 @@
 import { FC, useEffect, useState } from 'react';
 import PostItem from './post';
 import usePosts from '../hooks/usePosts';
-import { User } from '../models/user';
-import { Post } from '../models/post';
+import { User } from '../types/user';
+import { Post } from '../types/post';
 
 const Timeline: FC<{ user: User }> = ({ user }) => {
   const [posts, setPosts] = useState<Post[]>([]);

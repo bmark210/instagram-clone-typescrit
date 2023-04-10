@@ -1,4 +1,4 @@
-type comment = {
+export type comment = {
   comment: string;
   username: string;
 };

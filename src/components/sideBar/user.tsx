@@ -1,7 +1,7 @@
 import { FC, SyntheticEvent, memo } from 'react';
 import ContentLoader from 'react-content-loader';
 import { Link } from 'react-router-dom';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 
 interface UserFormProps {
   user: User;

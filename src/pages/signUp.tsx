@@ -2,7 +2,7 @@ import React, { useState, useEffect, FC } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../constans/routes';
-import { doesUsernameExists } from '../utils/firebase';
+import { doesUsernameExists } from '../db/firebase';
 import { createUserWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import {
   addDoc,
@@ -13,7 +13,7 @@ import {
   setDoc,
   where,
 } from 'firebase/firestore';
-import { auth, firestore } from '../db/firebase';
+import { auth, firestore } from '../utils/firebase';
 import InstagramLoading from '../components/ui/InstagramLoading';
 import useUserStore from '../store/userStore';
 

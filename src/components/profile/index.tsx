@@ -1,6 +1,6 @@
 import { FC, useEffect } from 'react';
-import { User } from '../../models/user';
-import { Post } from '../../models/post';
+import { User } from '../../types/user';
+import { Post } from '../../types/post';
 import Header from '../profile/header';
 import Photos from '../profile/photos';
 

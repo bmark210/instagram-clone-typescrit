@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { devtools, persist, createJSONStorage } from 'zustand/middleware';
 import produce from 'immer';
-import { User } from '../models/user';
+import { User } from '../types/user';
 
 interface UserStore {
   user: User | null;

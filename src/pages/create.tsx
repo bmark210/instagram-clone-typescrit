@@ -1,13 +1,10 @@
 import { FC, useState } from 'react';
 import CreateNewPost from '../components/forms/createNewPost';
-import { User } from '../models/user';
 import Modal from '../components/forms/modal';
+import useUserStore from '../store/userStore';
 
-interface CreateProps {
-  user: User | null;
-}
-
-const Create: FC<CreateProps> = ({ user }) => {
+const Create: FC = () => {
+  const user = useUserStore(state => state.user)
   const [isOpen, setIsOpen] = useState(false);
   const handleShowModal = () => {
     return isOpen ? setIsOpen(false) : setIsOpen(true);

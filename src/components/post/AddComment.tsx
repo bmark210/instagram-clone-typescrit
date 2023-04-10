@@ -1,5 +1,5 @@
 import { FC, RefObject, useState } from 'react';
-import { updateCommentsByPostId } from '../../utils/firebase';
+import { updateCommentsByPostId } from '../../db/firebase';
 import useUserStore from '../../store/userStore';
 
 interface Comment {

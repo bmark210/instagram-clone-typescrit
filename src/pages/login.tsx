@@ -2,12 +2,12 @@ import React, { FC, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import * as ROUTES from '../constans/routes';
-import { auth } from '../db/firebase';
+import { auth } from '../utils/firebase';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import InstagramLoading from '../components/ui/InstagramLoading';
-import { fetchUserByEmail } from '../utils/firebase';
+import { fetchUserByEmail } from '../db/firebase';
 import useUserStore from '../store/userStore';
-import { User } from '../models/user';
+import { User } from '../types/user';
 
 const Login: FC = () => {
   const navigate = useNavigate();

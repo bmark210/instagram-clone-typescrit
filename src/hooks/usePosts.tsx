@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Post } from '../models/post';
-import { User } from '../models/user';
-import { getPostsByFollowing } from '../utils/firebase';
+import { Post } from '../types/post';
+import { User } from '../types/user';
+import { getPostsByFollowing } from '../db/firebase';
 
 const usePosts = (user: User, limitOfPosts: number): Post[] | null => {
   const [posts, setPosts] = useState<Post[] | null>(null);

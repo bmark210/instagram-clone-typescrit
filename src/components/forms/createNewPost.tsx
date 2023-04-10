@@ -1,6 +1,6 @@
 import { getDownloadURL, getStorage, ref, uploadBytes } from 'firebase/storage';
 import { ChangeEvent, FC, useState } from 'react';
-import { firestore } from '../../db/firebase';
+import { firestore } from '../../utils/firebase';
 import {
   addDoc,
   collection,
@@ -11,7 +11,7 @@ import {
   where,
 } from 'firebase/firestore';
 import { useRef } from 'react';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 
 interface CreateNewPostProps {
   user: User | null;

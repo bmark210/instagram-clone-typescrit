@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import { User } from '../../models/user';
+import { User } from '../../types/user';
 import SuggestedProfile from './suggestedProfile';
 
 interface AllSuggestionsProps {
