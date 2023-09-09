@@ -59,7 +59,7 @@ const Header: FC<HeaderProps> = ({ photosCount, followers, profile }) => {
       <div className="container flex justify-center items-center">
         {profile.username ? (
           <img
-            className="rounded-full h-40 w-40"
+            className="rounded-full object-cover h-40 w-40"
             alt={`${profile.fullName} profile picture`}
             src={
               profile.avatarUrl !== null

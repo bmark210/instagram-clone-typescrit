@@ -33,7 +33,7 @@ const UserForm: FC<UserFormProps> = ({ user }) => {
     >
       <div className="flex items-center justify-between col-span-1">
         <img
-          className="rounded-full w-16 h-16 flex min-w-full"
+          className="rounded-full object-cover w-16 h-16 flex min-w-full"
           src={
             user.avatarUrl !== null
               ? `${user.avatarUrl}`

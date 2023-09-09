@@ -44,7 +44,7 @@ const PostItem: FC<PostProp> = ({ post }) => {
     <div className="rounded col-span-4 border bg-white border-gray-primary mb-12">
       <Header username={user.username} avatarUrl={avatarUrl} />
       <div className="flex items-center justify-center">
-        <Image photoUrl={post.avatarUrl} caption={post.caption} />
+        <Image photoUrl={post.imageUrl} caption={post.text} />
       </div>
       <Actions
         likesArray={post.likes}

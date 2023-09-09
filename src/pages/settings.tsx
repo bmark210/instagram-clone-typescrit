@@ -32,7 +32,7 @@ const Settings: FC = () => {
               <AvatarUploadForm />
             </Modal>
             <img
-              className="rounded-full h-12 w-12 mx-5"
+              className="rounded-full object-cover h-12 w-12 mx-5"
               src={
                 avatarUrl !== null
                   ? `${avatarUrl}`

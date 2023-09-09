@@ -6,7 +6,7 @@ interface ImageProps {
 }
 
 const Image: FC<ImageProps> = ({ photoUrl, caption }) => {
-  return <img className="w-full" src={photoUrl} alt={caption} />;
+  return <img className="w-full object-cover" src={photoUrl} alt={caption} />;
 };
 
 export default Image;
